@@ -1,0 +1,35 @@
+# Supabase CLI project config (`supabase init` defaults trimmed to what Keepr needs).
+project_id = "keepr"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "storage"]
+
+[db]
+port = 54322
+major_version = 15
+
+[auth]
+enabled = true
+site_url = "http://localhost:8080"
+additional_redirect_urls = ["io.keepr.app://login-callback", "http://localhost:8080"]
+enable_signup = true
+
+[auth.email]
+enable_signup = true
+enable_confirmations = true
+
+[storage]
+enabled = true
+file_size_limit = "6MiB"
+
+[functions.extract-receipt]
+verify_jwt = true
+
+[functions.delete-account]
+verify_jwt = true
+
+# RevenueCat calls this with its own shared secret, not a Supabase JWT.
+[functions.revenuecat-webhook]
+verify_jwt = false
