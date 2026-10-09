@@ -3,7 +3,7 @@
 // confidence score per field (PRD §11.1, FR-AI-01..08). The Anthropic key is
 // a server-side secret and never reaches the app.
 
-import Anthropic from "npm:@anthropic-ai/sdk";
+import Anthropic from "";
 import { adminClient, callerFrom, corsHeaders, error, json } from "../_shared/http.ts";
 
 const MODEL = Deno.env.get("KEEPR_EXTRACTION_MODEL") ?? "claude-opus-5-5";
