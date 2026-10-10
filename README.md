@@ -99,6 +99,7 @@ The suite covers the business rules (BR-01 … BR-13), the data layer against a 
 - Sync writes go through the `upsert_receipt` database function so a receipt and its items are saved atomically, with last-write-wins conflict handling.
 - AI scans are rate-limited (30 per hour per user) and quota-checked on the server.
 
+
 ## Production checklist
 
 - **Payments:** `DemoBillingGateway` simulates purchases. Replace it with a RevenueCat-backed `BillingGateway` (`purchases_flutter`) and point RevenueCat's webhook at `revenuecat-webhook`.
