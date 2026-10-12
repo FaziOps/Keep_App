@@ -20,5 +20,6 @@ linter:
     use_super_parameters: true
     prefer_initializing_formals: false
 
+
 formatter:
   page_width: 120
