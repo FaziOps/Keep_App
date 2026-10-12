@@ -6,7 +6,6 @@ Built from the product requirements in [`docs/Keepr_PRD.docx`](docs/Keepr_PRD.do
 
 ## Features
 
-
 | Area | What it does |
 |---|---|
 | **Scan + auto-fill** | Take or pick a photo and Keepr fills in the store, date, items, prices, total, currency, payment method, return window and warranties. On Android and iOS the receipt is read **on the device** (Apple Vision / Google ML Kit + Keepr's receipt parser): free, unlimited, offline, no account needed. With a cloud account, a Claude vision model (Edge Function) is used first for harder receipts, falling back to the device. Low-confidence fields are highlighted for checking. |
