@@ -18,6 +18,7 @@ import 'package:supabase_flutter/supabase_flutter.dart' show SupabaseClient;
 
 import '../helpers/fixtures.dart';
 
+
 void main() {
   late Directory dir;
   late LocalStore store;
