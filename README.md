@@ -90,7 +90,6 @@ flutter analyze
 flutter test
 ```
 
-
 The suite covers the business rules (BR-01 … BR-13), the data layer against a real Hive store, the AI response mapping, the PDF renderer, use cases with fakes, presenters through `ProviderContainer` overrides, and a widget test for the item editor.
 
 ## Security notes
