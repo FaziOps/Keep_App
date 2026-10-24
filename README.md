@@ -4,6 +4,7 @@ Snap a receipt and Keepr reads it with AI, tracks return windows and warranty en
 
 Built from the product requirements in [`docs/Keepr_PRD.docx`](docs/Keepr_PRD.docx).
 
+
 ## Features
 
 | Area | What it does |
